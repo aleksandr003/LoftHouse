@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #242b33;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
+  transition: color 250ms linear;
+}
+
+a:hover, a:focus {
+  color: #d4c17f;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1140px;
+}
+
+.container-ms {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 824px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.33;
+  color: #d4c17f;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 74px;
+  min-height: 840px;
+  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url(./../img/header/header-bg.jpg);
+}
+
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  position: relative;
+  padding-bottom: 121px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.33;
+  text-align: center;
+  color: #d4c17f;
+}
+
+.header__title__icon {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.header__footer__list {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.header__footer__link {
+  position: relative;
+  padding-left: 35px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.header__footer__link--address, .header__footer__link--phone {
+  padding-left: 35px;
+}
+
+.header__footer__link--address::before, .header__footer__link--phone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__footer__link--address::before {
+  background-image: url("./../img/header/map.svg");
+}
+
+.header__footer__link--phone::before {
+  background-image: url("./../img/header/phone.svg");
+}
+
+.nav {
+  font-size: 14px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+
+.benefits {
+  padding: 120px 0;
+}
+
+.benefits__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.benefits__img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 53px;
+}
+
+.benefits__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: 88px;
+}
+
+.apartments__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.apartments__item {
+  position: relative;
+  max-width: 540px;
+  height: auto;
+  overflow: hidden;
+}
+
+.apartments__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%);
+  z-index: 1;
+}
+
+.apartments__item .apartments__img {
+  z-index: -10;
+  transform: scale(1);
+  transition: all 250ms linear;
+}
+
+.apartments__item:hover .apartments__img,
+.apartments__item:focus .apartments__img {
+  transform: scale(1.1);
+}
+
+.apartments__item:hover::before {
+  background: inherit;
+}
+
+.apartments__item:hover .apartments__link::before {
+  opacity: 1;
+}
+
+.apartments__link::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  border: 3px double #ffffff;
+  opacity: 0;
+  transition: all 250ms linear;
+  z-index: 10;
+}
+
+.apartments__link:hover,
+.apartments__link:focus {
+  color: #ffffff;
+}
+
+.apartments__text {
+  position: absolute;
+  left: 50px;
+  bottom: 44px;
+  font-size: 24px;
+  line-height: 1.66;
+}
+/*# sourceMappingURL=main.css.map */

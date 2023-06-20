@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
+
+body {
+  font-family: $font-main;
+  background-color: $dark;
+  color: $white;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: $white;
+
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1140px;
+}
+
+.container-ms {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 824px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section-title {
+  font-family: $font-accent;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.33;
+  color: $accent;
+}
+
+.hidden {
+  display: none !important;
+}
